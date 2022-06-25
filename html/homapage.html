@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/homepage.css">
+</head>
+<body>
+
+<header class="header">
+
+    <div class="header__top">
+        <div class="container">
+            <div class="header__top-content d-flex align-items-center justify-content-end">
+
+                <div class="header__top-lang">
+
+                    <label>
+                        <input name="lang" value="УК" type="radio">
+                        <span>УК</span>
+                    </label>
+
+                    <label>
+                        <input name="lang" value="PL" type="radio">
+                        <span>PL</span>
+                    </label>
+
+                    <label>
+                        <input checked name="lang" value="EN" type="radio">
+                        <span>EN</span>
+                    </label>
+                </div>
+
+                <div class="header__top-address">
+                    <a target="_blank"
+                       href="https://www.google.com.ua/maps/place/Pyam'yatnyk+Zhertvam+Teroryzmu,+%D0%9F%D0%BE%D0%B1%D0%BB%D0%B8%D0%B7%D1%83+%D1%81%D1%82%D0%B0%D0%BD%D1%86%D1%96%D1%97+%D0%BC%D0%B5%D1%82%D1%80%D0%BE+%D0%9A%D0%BB%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%B0,+%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%9C%D0%B5%D1%87%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0,+14%2F1,+%D0%9A%D0%B8%D1%97%D0%B2,+01023/@50.4368635,30.529918,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf00d4d55dad:0x40f274cb5d991e55!8m2!3d50.4368601!4d30.5321067?hl=ru">Kyiv,
+                        Mechnikova str, 14/1
+                    </a>
+                </div>
+
+                <div class="header__top-phone">
+                    <a href="tel:0800211927">
+                        0800 211 927
+                    </a>
+                </div>
+
+                <div class="header__top-social">
+                    <a target="_blank" href="https://facebook.com/">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_42019_2766)">
+                                <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+                                      fill="white"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_42019_2766">
+                                    <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="can">
+    <div class="container">
+        <div class="can__inner">
+            <div class="can__top">
+                <a href="#" class="can__link sub-link">Services
+                    <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 1L6 5.5L1.5 10" stroke="#0085FF" stroke-width="2"/>
+                    </svg>
+                </a>
+                <h2 class="can__title">What can we do better than others?</h2>
+            </div>
+        </div>
+        <div class="can__products">
+            <div class="row flex-wrap g-5">
+                <div class="col-md-4 col-sm-6 col-12">
+                    <img class="can__products-img" src="../assets/ecommerce.svg" alt="img">
+                    <h3 class="can__products-title fw-bold">IT and e-commerce</h3>
+                    <p class="can__products-text">An endless stream of contracts, tax issues, labor relations, corporate
+                        papers - legal work distracts you from doing business. But there is not much work to do to hire
+                        an
+                        in-house lawyer.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12">
+                    <img class="can__products-img" src="../assets/support.svg" alt="img">
+                    <h3 class="can__products-title">Comprehensive daily
+                        legal support</h3>
+                    <p class="can__products-text">In addition, over time, the work will become the same type and
+                        uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good
+                        candidate with experience in the field of information technology in Ukraine.</p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-12">
+                    <img class="can__products-img" src="../assets/coprorate.svg" alt="img">
+                    <h3 class="can__products-title fw-bold">Structuring corporate relationships</h3>
+                    <p class="can__products-text">Instead of just providing legal services, we will hire a lawyer or a
+                        whole team that will fit into the daily life of your company.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12">
+                    <img class="can__products-img" src="../assets/trust.svg" alt="img">
+                    <h3 class="can__products-title fw-bold">Building contractual relations</h3>
+                    <p class="can__products-text">Once a week, or week after month, you have your own lawyer by your
+                        side. Anyone in the company can catch it at the coffee maker and just talk about current affairs
+                        instead of waiting for update status.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12">
+                    <img class="can__products-img" src="../assets/crotection.svg" alt="img">
+                    <h3 class="can__products-title fw-bold">Protection of business, intellectual property</h3>
+                    <p class="can__products-text">And all the other time he will work on new diverse projects, so he
+                        will definitely not stop in professional development. One way or another, all Axon Partners will
+                        work for you instead of a corporate lawyer.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12">
+                    <img class="can__products-img" src="../assets/court.svg" alt="img">
+                    <h3 class="can__products-title fw-bold">Judicial representation</h3>
+                    <p class="can__products-text">Is it a small, medium-sized company or a market leader? Local business
+                        or multinational company? Do you have your own legal department or not?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="slide">
+    <div class="container-lg">
+        <div class="slide__inner">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex flex-wrap">
+                            <div class="slide__img-avatar">
+                                <img src="../assets/team-1.png" alt="avatar">
+                            </div>
+
+                            <div class="slide__col-right col">
+                                <a href="#" class="can__link sub-link">команда
+                                    <svg width="8" height="11" viewBox="0 0 8 11" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.5 1L6 5.5L1.5 10" stroke="#0085FF" stroke-width="2"/>
+                                    </svg>
+                                </a>
+                                <h2 class="slide__title">Ми звикли брати на себе відповідальність та завжди гарантуємо
+                                    чесну,
+                                    вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                                <p class="slide__name">Олександр Олександровський</p>
+                                <p class="slide__position">Керуючий партнер</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="d-flex flex-wrap">
+                            <div class="slide__img-avatar">
+                                <img src="../assets/team-1.png" alt="avatar">
+                            </div>
+
+                            <div class="slide__col-right col">
+                                <a href="#" class="can__link sub-link">команда
+                                    <svg width="8" height="11" viewBox="0 0 8 11" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.5 1L6 5.5L1.5 10" stroke="#0085FF" stroke-width="2"/>
+                                    </svg>
+                                </a>
+                                <h2 class="slide__title">Ми звикли брати на себе відповідальність та завжди гарантуємо
+                                    чесну,
+                                    вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                                <p class="slide__name">Олександр Олександровський</p>
+                                <p class="slide__position">Керуючий партнер</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="d-flex flex-wrap">
+                            <div class="slide__img-avatar">
+                                <img src="../assets/team-1.png" alt="avatar">
+                            </div>
+
+                            <div class="slide__col-right col">
+                                <a href="#" class="can__link sub-link">команда
+                                    <svg width="8" height="11" viewBox="0 0 8 11" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.5 1L6 5.5L1.5 10" stroke="#0085FF" stroke-width="2"/>
+                                    </svg>
+                                </a>
+                                <h2 class="slide__title">Ми звикли брати на себе відповідальність та завжди гарантуємо
+                                    чесну,
+                                    вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                                <p class="slide__name">Олександр Олександровський</p>
+                                <p class="slide__position">Керуючий партнер</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

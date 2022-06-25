@@ -1,0 +1,41 @@
+.can {
+  background: $color-gradient-red;
+  padding: 1100px 0px 60px;
+  color: $color-white;
+
+  &__top {
+    margin-bottom: 60px;
+  }
+
+
+
+  &__title {
+    color: $color-accent;
+    font-size: $font-xxl;
+    line-height: 46px;
+    font-weight: $font-bold;
+    margin-bottom: 15px;
+  }
+
+  &__products {
+    &-img {
+      padding: 14px;
+      background: $color-white;
+      border-radius: 24px;
+      margin-bottom: 30px;
+    }
+
+    &-title {
+      color: $color-active-regular;
+      font-size: $font-lgg;
+      font-weight: $font-bold;
+      line-height: 26.82px;
+    }
+
+    &-text {
+      font-size: $font-sm;
+      line-height: 26px;
+    }
+
+  }
+}

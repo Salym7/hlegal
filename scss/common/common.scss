@@ -1,0 +1,43 @@
+body {
+  font-family: $main-font;
+  font-size: $font-md;
+  font-weight: $font-normal;
+  box-sizing: border-box;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.sub-link {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: $color-active-hover;
+  font-size: $font-xm;
+  font-weight: $font-bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+
+
+  &:hover {
+    color: $color-accent;
+  }
+
+  &:hover svg path {
+    stroke: $color-accent;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1600px;
+  }
+
+}
+
+@media (max-width: 768px) and (min-width: 660px) {
+  .container {
+    max-width: 648px;
+  }
+}
