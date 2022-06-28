@@ -121,60 +121,8 @@ body a {
   font-weight: 700;
 }
 
-.slide {
-  padding: 60px 0;
-  background: #ffffff;
-}
-.slide__img-avatar {
-  width: 400px;
-  overflow: hidden;
-}
-.slide img {
-  width: 100%;
-  height: 100%;
-}
-.slide__col-right {
-  padding: 30px;
-  background: #F5F5FA;
-}
-.slide__name {
-  color: #B3B3BA;
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 6px;
-}
-.slide__position {
-  color: #B3B3BA;
-  font-size: 14px;
-}
-.slide .carousel-inner {
-  border-radius: 12px;
-}
-.slide .carousel-indicators [data-bs-target] {
-  box-sizing: border-box;
-  border: none;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: #24A3FF;
-}
-.slide .carousel-indicators {
-  margin-bottom: 15px;
-}
-
-@media (max-width: 768px) {
-  .slide__img-avatar {
-    width: 100%;
-  }
-  .slide__img-avatar img {
-    width: 100%;
-    height: 100%;
-  }
-}
-@media (max-width: 450px) {
-  .slide__title {
-    font-size: 30px;
-  }
+.trust {
+  padding-top: 60px;
 }
 
 .can {
@@ -279,61 +227,6 @@ body a {
   }
 }
 
-.recommended {
-  background: #F5F5FA;
-  padding-top: 30px;
-}
-.recommended__public {
-  display: flex;
-  gap: 30px;
-  padding-bottom: 10px;
-}
-.recommended__public-box {
-  flex: 1 1 30%;
-  overflow: hidden;
-  border-radius: 12px;
-  background: #ffffff;
-}
-.recommended__public-container {
-  padding: 30px;
-}
-.recommended__public-img {
-  width: 100%;
-}
-.recommended__public-title {
-  color: #24A3FF;
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 16px;
-}
-.recommended__public-data {
-  font-size: 14px;
-  color: #B3B3BA;
-  margin-bottom: 15px;
-}
-.recommended__public-text {
-  color: black;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-@media (max-width: 767px) {
-  .recommended__public {
-    flex-wrap: wrap;
-  }
-  .recommended__public-box:not(:last-child) {
-    flex: 1 1 46%;
-  }
-  .recommended__public-box:last-child {
-    flex: 1 1 100%;
-  }
-}
-@media (max-width: 576px) {
-  .recommended__public-box {
-    flex: 1 1 100% !important;
-  }
-}
-
 .footer {
   padding: 30px 0;
   background: #F5F5FA;
@@ -419,7 +312,7 @@ body a {
   left: -13px;
 }
 .footer__contact {
-  width: 50%;
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 26px;
@@ -456,4 +349,4 @@ body a {
   }
 }
 
-/*# sourceMappingURL=homepage.css.map */
+/*# sourceMappingURL=servicespage.css.map */

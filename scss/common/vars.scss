@@ -12,7 +12,7 @@ $font-normal: 400;
 $font-bold: 700;
 
 
-$color-white: #fff;
+$color-white: #ffffff;
 
 $color-main: #323264;
 $color-alt: #46466E;
@@ -30,12 +30,18 @@ $color-gradient-soft: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, 
 $color-gradient-red: linear-gradient(323.35deg, #F0145A 6.7%, #693264 70.36%);
 $color-gradient-supersoft: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
 $color-gradient-red-text: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+$color-gradient-title: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
 
-:root {
-  --bs-link-color: black;
+//:root {
+//  --bs-link-color: black;
+//  --bs-gutter-y: 1000px;
+//}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  --bs-gutter-x: 60px;
 }
 
-:root {
-  --bs-gutter-y: 1000px;
-  --bs-gutter-x: 30px;
+.form-control:focus {
+  color: $color-active-regular;
+  box-shadow: none;
 }

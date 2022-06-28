@@ -3,6 +3,7 @@ body {
   font-size: $font-md;
   font-weight: $font-normal;
   box-sizing: border-box;
+  color: black;
 
   a {
     text-decoration: none;
@@ -12,7 +13,7 @@ body {
 .sub-link {
   display: flex;
   align-items: center;
-  gap: 2px;
+  gap: 3px;
   color: $color-active-hover;
   font-size: $font-xm;
   font-weight: $font-bold;
@@ -22,22 +23,90 @@ body {
 
   &:hover {
     color: $color-accent;
+    transition: .5s;
   }
 
   &:hover svg path {
     stroke: $color-accent;
   }
+
 }
 
-@media (min-width: 1600px) {
-  .container {
-    max-width: 1600px;
+.gray-line {
+  height: 4px;
+  width: 100%;
+  background: $color-gray-separator;
+  margin-bottom: 15px;
+}
+
+.services-img {
+  padding: 14px;
+  background: $color-white;
+  border-radius: 24px;
+  margin-bottom: 30px;
+}
+
+.main-title {
+  font-weight: $font-bold;
+  font-size: $font-xxl;
+  line-height: 46px;
+
+  margin-bottom: 30px;
+  color: transparent;
+  background-image: $color-gradient-title;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  @media (max-width: 450px) {
+    font-size: $font-xl;
   }
 
 }
 
-@media (max-width: 768px) and (min-width: 660px) {
+.main__btn {
+  background: $color-active-regular;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+  padding: 18px 30px;
+  color: $color-white;
+  font-size: $font-sm;
+  font-weight: $font-bold;
+  font-family: $main-font;
+  border: transparent;
+  outline: none;
+}
+
+.main__btn:hover {
+  background: $color-active-hover;
+}
+
+.main__btn:active {
+  background: $color-active-active;
+}
+
+
+@media (min-width: 1600px) {
   .container {
-    max-width: 648px;
+    max-width: 1660px;
+  }
+  .trust .container {
+    max-width: 1720px;
+  }
+  .publication-entry .container {
+    max-width: 1420px;
+  }
+}
+
+
+@media (max-width: 1600px) {
+  .publication-entry .container {
+    max-width: 1140px;
+  }
+}
+
+
+@media (max-width: 768px) and (min-width: 680px) {
+  .container {
+    max-width: 708px;
   }
 }

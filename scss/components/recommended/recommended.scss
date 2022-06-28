@@ -1,0 +1,52 @@
+.recommended {
+  background: $color-grey-bg;
+  padding-top: 30px;
+
+
+  &__public {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    &-box {
+      flex: 1 1 30%;
+      overflow: hidden;
+      border-radius: 12px;
+      background: $color-white;
+    }
+
+    &-container {
+      padding: 30px;
+    }
+
+    &-img {
+      width: 100%;
+    }
+
+    &-title {
+      color: $color-active-regular;
+      font-weight: $font-bold;
+      margin-bottom: 15px;
+      font-size: $font-sm;
+    }
+
+    &-data {
+      font-size: $font-xm;
+      color: $color-gray-text;
+      margin-bottom: 15px;
+    }
+
+    &-text {
+      color: black;
+      font-size: $font-xm;
+      margin-bottom: 0;
+    }
+
+  }
+
+  &__btn {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+}
