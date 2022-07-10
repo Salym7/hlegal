@@ -28,6 +28,7 @@ body {
 
   &:hover svg path {
     stroke: $color-accent;
+    transition: .5s;
   }
 
 }
@@ -84,19 +85,112 @@ body {
   background: $color-active-active;
 }
 
+.team__post {
+  color: $color-gray-text;
+  font-size: $font-sm;
+  font-weight: $font-bold;
+  margin-bottom: 6px;
+}
+
+.team__post {
+  color: $color-gray-text;
+  font-size: $font-xm;
+}
+
+.about__inner {
+  max-width: 1360px;
+  margin: auto;
+  display: flex;
+  gap: 30px;
+  padding: 60px 0;
+}
+
+.bg-gradient {
+  position: relative;
+  border-bottom-left-radius: $default-border-radius;
+  border-bottom-right-radius: $default-border-radius;
+
+
+  &:before, &:after {
+    content: '';
+    display: block;
+    border-radius: 0 0 $default-border-radius $default-border-radius;
+    position: absolute;
+    height: $gradient-shadow-height;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &:before {
+    bottom: -10px;
+    background-color: #CACADB;
+    width: calc(100% - 20px);
+  }
+
+  &:after {
+    bottom: -20px;
+    background-color: #E7E7F2;
+    width: calc(100% - 40px);
+  }
+
+
+}
+
+.container-small {
+  max-width: 1480px;
+  padding: 0 60px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1600px) {
+  .container-small {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 568px) {
+  .container-small {
+    padding: 0 30px;
+  }
+}
+
+
+.about__introduction {
+  flex: 1 1 942px;
+}
+
+.about__advantages {
+  flex: 1 0 388px;
+  padding-right: 30px;
+}
+
+@media (max-width: 992px) {
+  .about__inner {
+    flex-wrap: wrap;
+  }
+  .about__introduction,
+  .about__advantages {
+    flex: 1 1 100%;
+  }
+}
 
 @media (min-width: 1600px) {
-  .container {
+  .container-lg {
     max-width: 1660px;
   }
   .trust .container {
     max-width: 1720px;
   }
-  .publication-entry .container {
-    max-width: 1420px;
-  }
+  //.publication-entry .container {
+  //  max-width: 1420px;
+  //}
 }
 
+@media (max-width: 1400px) {
+  .publication-entry .container {
+    max-width: 1140px;
+  }
+}
 
 @media (max-width: 1600px) {
   .publication-entry .container {
@@ -105,8 +199,9 @@ body {
 }
 
 
-@media (max-width: 768px) and (min-width: 680px) {
-  .container {
-    max-width: 708px;
-  }
-}
+//@media (max-width: 768px) and (min-width: 680px) {
+//  .container {
+//    max-width: 708px;
+//  }
+//}
+

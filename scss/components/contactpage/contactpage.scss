@@ -6,6 +6,7 @@
     max-width: 1360px;
     display: flex;
     gap: 60px;
+    flex-wrap: wrap;
 
   }
 
@@ -87,11 +88,6 @@
     margin-bottom: 15px;
   }
 
-  //input__email input:focus-within {
-  //  color: $color_active-regular;
-  //  border-color: $color_active-regular;
-  //}
-
   &__form {
     background: $color-grey-bg;
     padding: 30px;
@@ -113,6 +109,20 @@
 
   .input__email {
     margin-bottom: 30px;
+  }
+}
+
+.single {
+  .contact {
+    background: $color-main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    &__form {
+      width: 650px;
+    }
   }
 
 }

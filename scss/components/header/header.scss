@@ -1,19 +1,38 @@
 .header {
+  position: absolute;
+  padding-top: 50px;
+  width: 100%;
+  z-index: 1;
+
+  &-content-wrapper {
+    position: relative;
+  }
+
   &__top {
-    font-size: $font-lg;
-    background-color: pink;
+    font-size: $font-sm;
 
-    &-content > div:not(:last-child) {
-      margin-right: 6px;
+    .container-lg {
+      position: relative;
+    }
 
-      &:after {
-        content: '';
-        display: inline-block;
-        width: 7px;
-        height: 7px;
-        background-color: $color-white;
-        border-radius: 50%;
-        margin-left: 3px;
+    &-content {
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      top: -16px;
+
+      & > div:not(:last-child) {
+        margin-right: 6px;
+
+        &:after {
+          content: '';
+          display: inline-block;
+          width: 7px;
+          height: 7px;
+          background-color: $color-white;
+          border-radius: 50%;
+          margin-left: 3px;
+        }
       }
     }
 
@@ -49,8 +68,34 @@
     }
 
     &-phone a {
-       font-weight: $font-bold;
+      font-weight: $font-bold;
     }
 
+  }
+
+  .navbar {
+
+    &-brand {
+      margin-top: -20px;
+    }
+
+    &-nav {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+      padding-top: 20px;
+    }
+
+
+    .nav-link {
+      font-weight: $font-bold;
+      padding-bottom: 3px;
+
+      &.active {
+        border-bottom: 2px solid;
+      }
+
+    }
   }
 }

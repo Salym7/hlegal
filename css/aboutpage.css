@@ -87,6 +87,50 @@ body a {
   background: #006CCF;
 }
 
+.team__post {
+  color: #B3B3BA;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.team__post {
+  color: #B3B3BA;
+  font-size: 14px;
+}
+
+.about__inner {
+  max-width: 1360px;
+  margin: auto;
+  display: flex;
+  gap: 30px;
+  padding: 60px 0;
+}
+
+@media (max-width: 1600px) {
+  .about__inner {
+    max-width: 1080px;
+  }
+}
+.about__introduction {
+  flex: 1 1 942px;
+}
+
+.about__advantages {
+  flex: 1 0 388px;
+  padding-right: 30px;
+}
+
+@media (max-width: 992px) {
+  .about__inner {
+    flex-wrap: wrap;
+  }
+
+  .about__introduction,
+.about__advantages {
+    flex: 1 1 100%;
+  }
+}
 @media (min-width: 1600px) {
   .container {
     max-width: 1660px;
@@ -98,6 +142,11 @@ body a {
 
   .publication-entry .container {
     max-width: 1420px;
+  }
+}
+@media (max-width: 1400px) {
+  .publication-entry .container {
+    max-width: 1140px;
   }
 }
 @media (max-width: 1600px) {
@@ -124,107 +173,6 @@ body a {
   font-style: normal;
   font-display: swap;
 }
-.contact {
-  padding: 60px 0;
-}
-.contact__inner {
-  margin: 0 auto;
-  max-width: 1360px;
-  display: flex;
-  gap: 60px;
-  flex-wrap: wrap;
-}
-.contact__form-title {
-  font-size: 30px;
-}
-.contact__contact {
-  font-size: 21px;
-}
-.contact__contact, .contact__form {
-  width: calc(50% - 30px);
-}
-.contact__social {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.contact__social span {
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: 700;
-  line-height: 16px;
-  text-align: left;
-}
-.contact__social:hover svg path {
-  fill: #F0145A;
-  transition: 0.5s;
-}
-.contact__social:hover {
-  color: #F0145A;
-  transition: 0.5s;
-}
-.contact__address-text {
-  line-height: 30px;
-  margin-bottom: 30px;
-}
-.contact .gray-line {
-  margin-bottom: 30px;
-}
-.contact__email {
-  margin-bottom: 30px;
-  color: #24A3FF;
-}
-.contact__phone {
-  margin-bottom: 30px;
-}
-.contact__phone a {
-  color: #323264;
-}
-.contact__email:hover {
-  color: #0085FF;
-}
-.contact input, .contact button, .contact textarea {
-  border: 2px solid transparent;
-  border-radius: 12px;
-  width: 100%;
-}
-.contact input, .contact textarea {
-  padding: 15px;
-  font-size: 16px;
-  color: #B3B3BA;
-  margin-bottom: 15px;
-}
-.contact__form {
-  background: #F5F5FA;
-  padding: 30px;
-  border-radius: 12px;
-}
-.contact textarea {
-  resize: none;
-  margin-bottom: 30px;
-  height: 130px;
-}
-.contact__form-ask {
-  font-size: 16px;
-  color: #B3B3BA;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.contact .input__email {
-  margin-bottom: 30px;
-}
-
-@media (max-width: 1600px) {
-  .contact__inner {
-    max-width: 1080px;
-  }
-}
-@media (max-width: 768px) {
-  .contact__contact, .contact__form {
-    width: 100%;
-  }
-}
-
 .header__top {
   font-size: 19px;
   background-color: pink;
@@ -263,6 +211,83 @@ body a {
 }
 .header__top-phone a {
   font-weight: 700;
+}
+
+.intro .about__advantages {
+  border-left: 4px solid #E6E6F0;
+}
+.intro .about__advantages .main-title {
+  margin-bottom: 0;
+}
+.intro__list {
+  margin-bottom: 0;
+}
+.intro__item {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  flex-wrap: wrap;
+}
+.intro__item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.intro__item-text {
+  width: 100%;
+}
+
+.bg__team {
+  position: relative;
+}
+.bg__team-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 96px;
+  color: #ffffff;
+  opacity: 0.8;
+}
+.bg__team-img {
+  width: 100vw;
+}
+
+.more .main-title {
+  margin-bottom: 0;
+}
+
+.slide {
+  padding: 30px 0;
+  background: #F5F5FA;
+  text-align: center;
+}
+.slide-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #323264;
+  text-transform: uppercase;
+}
+.slide .carousel-item-inner {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+.slide .carousel-item-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  flex: 1 1 25%;
+  padding: 25px 0;
+}
+
+.carousel-indicators [data-bs-target] {
+  box-sizing: border-box;
+  border: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #24A3FF;
 }
 
 .footer {
@@ -387,4 +412,4 @@ body a {
   }
 }
 
-/*# sourceMappingURL=contactpage.css.map */
+/*# sourceMappingURL=aboutpage.css.map */
