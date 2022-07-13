@@ -113,12 +113,22 @@
 }
 
 .single {
+  &__head {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btn-close {
+    right: 30px;
+    top: 30px;
+    width: 32px;
+    height: 32px;
+  }
+
   .contact {
-    background: $color-main;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
 
     &__form {
       width: 650px;

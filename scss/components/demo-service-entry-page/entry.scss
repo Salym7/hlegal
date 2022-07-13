@@ -1,20 +1,13 @@
-.header {
-  background: $color-main;
-}
-
 .entry {
-  background: $color-gradient-soft;
-
+  padding-top: 176px;
 
   &__inner {
-    max-width: 1360px;
     color: $color-white;
-    margin: 0 auto;
   }
 
   &__top {
     text-align: center;
-    padding: 60px 0;
+    padding-bottom: 60px;
     border-bottom: 4px solid $color-gray-separator;
   }
 

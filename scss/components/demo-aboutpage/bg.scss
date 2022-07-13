@@ -1,4 +1,6 @@
 .bg {
+  margin-bottom: 60px;
+
   &__team {
     position: relative;
 
@@ -13,7 +15,7 @@
     }
 
     &-img {
-      width: 100vw;
+      width: 100%;
     }
   }
 }

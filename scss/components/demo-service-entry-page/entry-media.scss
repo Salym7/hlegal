@@ -1,13 +1,6 @@
 .entry {
-  @media (max-width: 1440px) {
-    &__inner {
-      max-width: 1080px;
-    }
-  }
-  @media (max-width: 1024px) {
-    &__inner {
-      width: 100%;
-    }
+  @media (max-width: 1024px) and (min-width: 768px) {
+    padding-top: 280px;
   }
   @media (max-width: 768px) {
     &__list {

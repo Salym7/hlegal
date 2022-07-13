@@ -38,6 +38,7 @@ $color-gradient-title: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   --bs-gutter-x: 60px;
 }
 
+
 .form-control:focus {
   color: $color-active-regular;
   box-shadow: none;
@@ -69,3 +70,8 @@ $gradient-shadow-height: 10px;
   --bs-nav-pills-link-active-color: #B3B3BA;
   --bs-nav-pills-link-active-bg: none;
 }
+
+.modal {
+  --bs-modal-width: 650px
+}
+
