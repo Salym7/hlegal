@@ -3,11 +3,11 @@
     &__public {
       flex-wrap: wrap;
 
-      &-box:not(:last-child) {
+      &-box {
         flex: 1 1 46%;
       }
 
-      &-box:last-child {
+      .last {
         flex: 1 1 100%;
       }
     }

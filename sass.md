@@ -1,0 +1,1 @@
+sass --watch scss/publications-page.scss:css/publications-page.css

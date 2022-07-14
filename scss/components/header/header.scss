@@ -15,6 +15,11 @@
       position: relative;
     }
 
+    &-social:hover svg path {
+      fill: $color-accent;
+      transition: 0.5s;
+    }
+
     &-content {
       position: absolute;
       z-index: 1;
@@ -70,6 +75,7 @@
     &-phone a {
       font-weight: $font-bold;
     }
+
 
   }
 

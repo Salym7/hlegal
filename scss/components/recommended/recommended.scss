@@ -47,6 +47,24 @@
         background-position: center center;
         background-size: cover;
       }
+      &-4 {
+        background-image: url("../assets/publication-4.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+      }
+      &-5 {
+        background-image: url("../assets/publication-5.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+      }
+      &-6 {
+        background-image: url("../assets/publication-6.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+      }
     }
 
 
@@ -78,6 +96,10 @@
   &__btn {
     margin-top: 30px;
     text-align: center;
+  }
+
+  &__top {
+    padding-top: 176px;
   }
 
 }

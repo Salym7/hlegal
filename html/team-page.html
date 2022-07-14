@@ -10,111 +10,123 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/teampage.css">
+    <link rel="stylesheet" href="../css/team-page.css">
 </head>
 <body>
 <header class="header">
+    <div class="header-content-wrapper">
+        <div class="header__top">
+            <div class="container-lg">
+                <div class="header__top-content d-flex align-items-center">
 
-    <div class="header__top">
-        <div class="container">
-            <div class="header__top-content d-flex align-items-center justify-content-end">
+                    <div class="header__top-lang">
 
-                <div class="header__top-lang">
+                        <label>
+                            <input name="lang" value="УК" type="radio">
+                            <span>УК</span>
+                        </label>
 
-                    <label>
-                        <input name="lang" value="УК" type="radio">
-                        <span>УК</span>
-                    </label>
+                        <label>
+                            <input name="lang" value="PL" type="radio">
+                            <span>PL</span>
+                        </label>
 
-                    <label>
-                        <input name="lang" value="PL" type="radio">
-                        <span>PL</span>
-                    </label>
+                        <label>
+                            <input checked name="lang" value="EN" type="radio">
+                            <span>EN</span>
+                        </label>
+                    </div>
 
-                    <label>
-                        <input checked name="lang" value="EN" type="radio">
-                        <span>EN</span>
-                    </label>
-                </div>
-
-                <div class="header__top-address">
-                    <a target="_blank"
-                       href="https://www.google.com.ua/maps/place/Pyam'yatnyk+Zhertvam+Teroryzmu,+%D0%9F%D0%BE%D0%B1%D0%BB%D0%B8%D0%B7%D1%83+%D1%81%D1%82%D0%B0%D0%BD%D1%86%D1%96%D1%97+%D0%BC%D0%B5%D1%82%D1%80%D0%BE+%D0%9A%D0%BB%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%B0,+%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%9C%D0%B5%D1%87%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0,+14%2F1,+%D0%9A%D0%B8%D1%97%D0%B2,+01023/@50.4368635,30.529918,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf00d4d55dad:0x40f274cb5d991e55!8m2!3d50.4368601!4d30.5321067?hl=ru">Kyiv,
-                        Mechnikova str, 14/1
-                    </a>
-                </div>
-
-                <div class="header__top-phone">
-                    <a href="tel:0800211927">
-                        0800 211 927
-                    </a>
-                </div>
-
-                <div class="header__top-social">
-                    <a target="_blank" href="https://facebook.com/">
-                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_42019_2766)">
-                                <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
-                                      fill="white"/>
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_42019_2766">
-                                    <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                           data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+                    <div class="header__top-address">
+                        <a target="_blank"
+                           href="https://www.google.com.ua/maps/place/Pyam'yatnyk+Zhertvam+Teroryzmu,+%D0%9F%D0%BE%D0%B1%D0%BB%D0%B8%D0%B7%D1%83+%D1%81%D1%82%D0%B0%D0%BD%D1%86%D1%96%D1%97+%D0%BC%D0%B5%D1%82%D1%80%D0%BE+%D0%9A%D0%BB%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%B0,+%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%9C%D0%B5%D1%87%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0,+14%2F1,+%D0%9A%D0%B8%D1%97%D0%B2,+01023/@50.4368635,30.529918,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf00d4d55dad:0x40f274cb5d991e55!8m2!3d50.4368601!4d30.5321067?hl=ru">Kyiv,
+                            Mechnikova str, 14/1
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                    </div>
+
+                    <div class="header__top-phone">
+                        <a href="tel:0800211927">
+                            0800 211 927
+                        </a>
+                    </div>
+
+                    <div class="header__top-social">
+                        <a target="_blank" href="https://facebook.com/">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_42019_2766)">
+                                    <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+                                          fill="#B3B3BA"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_42019_2766">
+                                        <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
             </div>
         </div>
-    </nav>
+
+        <nav class="navbar navbar-expand-md">
+            <div class="container-lg">
+                <div class="navbar-brand" href="#">
+                    <div class="logo-block">
+                        <a href="home-page.html"> <img class="logo" src="../assets/logo-white.svg"
+                                                       alt="logo"></a>
+                        <svg width="21" height="47" viewBox="0 0 21 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1752 0H21L5.82482 47H0L15.1752 0Z"
+                                  fill="#F0145A"/>
+                        </svg>
+                        <span>team</span>
+
+                    </div>
+
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="../html/about-page.html">about us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/services-page.html">services</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../html/team-page.html">team</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/publications-page.html">publications</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/contact-page.html">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
 </header>
+
 <main>
     <section class="team">
-        <div class="container">
+        <div class="container-lg">
             <div class="team__inner">
                 <h1 class="main-title">We are used to taking responsibility and always guarantee honest, timely
                     assistance,
@@ -122,7 +134,7 @@
                 </h1>
                 <div class="team__group">
                     <div class="team__box">
-                        <img class="team__box-ava" src="../assets/team-1.jpg" alt="ava">
+                        <div class="team__box-ava img-1"></div>
                         <div class="team__data">
                             <a class="team__link" href="#">
                                 <p href="#" class="team__name">Alexander Alexandrovsky
@@ -138,7 +150,7 @@
                         </div>
                     </div>
                     <div class="team__box">
-                        <img class="team__box-ava" src="../assets/team-2.jpg" alt="ava">
+                        <div class="team__box-ava img-2"></div>
                         <div class="team__data">
                             <a class="team__link" href="#">
                                 <p href="#" class="team__name">Evgeny Patrikov
@@ -154,7 +166,7 @@
                         </div>
                     </div>
                     <div class="team__box">
-                        <img class="team__box-ava" src="../assets/team-3.jpg" alt="ava">
+                        <div class="team__box-ava img-3"></div>
                         <div class="team__data">
                             <a class="team__link" href="#">
                                 <p href="#" class="team__name">Vladislav Melnik
@@ -170,7 +182,7 @@
                         </div>
                     </div>
                     <div class="team__box">
-                        <img class="team__box-ava" src="../assets/team-4.jpg" alt="ava">
+                        <div class="team__box-ava img-4"></div>
                         <div class="team__data">
                             <a class="team__link" href="#">
                                 <p href="#" class="team__name">Sergey Binn
@@ -186,7 +198,7 @@
                         </div>
                     </div>
                     <div class="team__box">
-                        <img class="team__box-ava" src="../assets/team-5.jpg" alt="ava">
+                        <div class="team__box-ava img-5"></div>
                         <div class="team__data">
                             <a class="team__link" href="#">
                                 <p href="#" class="team__name">Oksana Kobzar
@@ -202,7 +214,7 @@
                         </div>
                     </div>
                     <div class="team__box">
-                        <img class="team__box-ava" src="../assets/team-6.jpg" alt="ava">
+                        <div class="team__box-ava img-6"></div>
                         <div class="team__data">
                             <a class="team__link" href="#">
                                 <p href="#" class="team__name">Julia Wolk
@@ -224,7 +236,7 @@
     </section>
 </main>
 <footer class="footer">
-    <div class="container">
+    <div class="container-lg">
         <div class="footer__inner">
             <div class="footer__address">
                 <div class="footer__address-text">Kyiv, Mechnikova str, 14/1</div>

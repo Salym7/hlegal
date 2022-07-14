@@ -1,9 +1,7 @@
 .contact {
-  padding: 60px 0;
+  padding: 176px 0 60px;
 
   &__inner {
-    margin: 0 auto;
-    max-width: 1360px;
     display: flex;
     gap: 60px;
     flex-wrap: wrap;
@@ -42,10 +40,11 @@
     transition: .5s;
   }
 
-  &__social:hover {
+  &__social:hover, &__email a:hover {
     color: $color-accent;
     transition: .5s;
   }
+
 
   &__address-text {
 
