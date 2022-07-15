@@ -29,7 +29,7 @@
     }
 
     .navbar {
-      padding: 15px 0 0 0;
+      padding-top: 10px;
 
       &-brand {
         margin: 0;
@@ -98,7 +98,8 @@
       background-color: rgba(245, 245, 250, 0.2);
 
       .container-lg {
-        padding: 10px 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
       }
 
       &-content {
@@ -120,10 +121,7 @@
     }
 
   }
-  @media (max-width: 450px) {
-    .navbar {
-      padding: 0;
-    }
+  @media (max-width: 500px) {
 
     .logo-block {
       display: flex;
@@ -144,5 +142,6 @@
       }
     }
   }
+
 
 }

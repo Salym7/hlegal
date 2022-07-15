@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/publications-page.css">
 </head>
 <body>
+
 <header class="header">
     <div class="header-content-wrapper">
         <div class="header__top">
@@ -111,11 +112,11 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="../html/publications-page.html">publications</a>
+                            <a class="nav-link active" href="../html/publications-page.html">publications</a>
                         </li>
 
-                        <li class="nav-item ">
-                            <a class="nav-link active" href="../html/contact-page.html">contact</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/contact-page.html">contact</a>
                         </li>
                     </ul>
                 </div>
@@ -124,16 +125,26 @@
     </div>
 </header>
 <main>
-
+    <section class="spaces"></section>
     <section class="recommended">
         <div class="container-lg">
             <div class="recommended__inner">
                 <div class="recommended__top">
-                    <div class="btn btn-dark mb-5">кнопка</div>
+                    <div class="recommended__top-btn">
+                        <label>
+                            <input name="btn" value="news" type="radio">
+                            <span>news</span>
+                        </label>
+
+                        <label>
+                            <input checked name="btn" value="articles" type="radio">
+                            <span>articles</span>
+                        </label>
+                    </div>
                 </div>
                 <div class="recommended__public">
                     <div class="recommended__public-box">
-                        <a href="#">
+                        <a href="../html/publication-entry-page.html">
                             <div class="recommended__public-img img-1"></div>
                             <div class="recommended__public-container">
                                 <h4 class="recommended__public-title">Equity associate</h4>
@@ -147,7 +158,7 @@
                         </a>
                     </div>
                     <div class="recommended__public-box">
-                        <a href="#">
+                        <a href="../html/publication-entry-page.html">
                             <div class="recommended__public-img img-2"></div>
                             <div class="recommended__public-container">
                                 <h4 class="recommended__public-title">Penalty for the Good Corporation: what will
@@ -161,7 +172,7 @@
                         </a>
                     </div>
                     <div class="recommended__public-box">
-                        <a href="#">
+                        <a href="../html/publication-entry-page.html">
                             <div class="recommended__public-img img-3"></div>
                             <div class="recommended__public-container">
                                 <h4 class="recommended__public-title">Millennial Testament</h4>
@@ -174,7 +185,7 @@
                         </a>
                     </div>
                     <div class="recommended__public-box">
-                        <a href="#">
+                        <a href="../html/publication-entry-page.html">
                             <div class="recommended__public-img img-4"></div>
                             <div class="recommended__public-container">
                                 <h4 class="recommended__public-title">Language Law: How to Make Your Website
@@ -188,7 +199,7 @@
                         </a>
                     </div>
                     <div class="recommended__public-box">
-                        <a href="#">
+                        <a href="../html/publication-entry-page.html">
                             <div class="recommended__public-img img-5"></div>
                             <div class="recommended__public-container">
                                 <h4 class="recommended__public-title">Reimbursement of the child's tuition fees in
@@ -202,8 +213,7 @@
                         </a>
                     </div>
                     <div class="recommended__public-box">
-                        <a href="#">
-
+                        <a href="../html/publication-entry-page.html">
                             <div class="recommended__public-container">
                                 <h4 class="recommended__public-title">Currency control is dead, long live currency
                                     control!</h4>
@@ -236,6 +246,7 @@
                     on map
                 </a>
             </div>
+
             <div class="footer__copy">© 2021 HLEGAL Law company, LLC</div>
             <div class="footer__contact">
                 <div class="footer__social">
@@ -263,5 +274,6 @@
     </div>
 
 </footer>
+<script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

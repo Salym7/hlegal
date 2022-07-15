@@ -25,6 +25,10 @@
   --bs-nav-pills-link-active-bg: none;
 }
 
+.modal {
+  --bs-modal-width: 650px ;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -213,6 +217,10 @@ body a {
     max-width: 1140px;
   }
 }
+.btn-close {
+  background: none;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype");
@@ -241,6 +249,10 @@ body a {
 }
 .header__top .container-lg {
   position: relative;
+}
+.header__top-social:hover svg path {
+  fill: #F0145A;
+  transition: 0.5s;
 }
 .header__top-content {
   position: absolute;
@@ -304,7 +316,7 @@ body a {
 }
 .header .navbar .nav-link {
   font-weight: 700;
-  padding-bottom: 3px;
+  padding-bottom: 4px;
 }
 .header .navbar .nav-link.active {
   border-bottom: 2px solid;
@@ -336,7 +348,7 @@ body a {
     padding-top: 0;
   }
   .header .navbar {
-    padding: 15px 0 0 0;
+    padding-top: 10px;
   }
   .header .navbar-brand {
     margin: 0;
@@ -386,7 +398,8 @@ body a {
     background-color: rgba(245, 245, 250, 0.2);
   }
   .header__top .container-lg {
-    padding: 10px 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .header__top-content {
     margin: 0;
@@ -402,10 +415,7 @@ body a {
     margin: 0 !important;
   }
 }
-@media (max-width: 450px) {
-  .header .navbar {
-    padding: 0;
-  }
+@media (max-width: 500px) {
   .header .logo-block {
     display: flex;
     gap: 4px;
@@ -730,6 +740,24 @@ body a {
   background-position: center center;
   background-size: cover;
 }
+.recommended__public .img-4 {
+  background-image: url("../assets/publication-4.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.recommended__public .img-5 {
+  background-image: url("../assets/publication-5.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.recommended__public .img-6 {
+  background-image: url("../assets/publication-6.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
 .recommended__public-title {
   color: #24A3FF;
   font-weight: 700;
@@ -749,19 +777,15 @@ body a {
   font-size: 14px;
   margin-bottom: 0;
 }
-.recommended__btn {
-  margin-top: 30px;
-  text-align: center;
-}
 
 @media (max-width: 767px) {
   .recommended__public {
     flex-wrap: wrap;
   }
-  .recommended__public-box:not(:last-child) {
+  .recommended__public-box {
     flex: 1 1 46%;
   }
-  .recommended__public-box:last-child {
+  .recommended__public .last {
     flex: 1 1 100%;
   }
 }

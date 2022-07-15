@@ -9,6 +9,10 @@
     text-align: center;
     padding-bottom: 60px;
     border-bottom: 4px solid $color-gray-separator;
+
+    p {
+      margin-bottom: 28px;
+    }
   }
 
   &__services {

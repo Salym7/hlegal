@@ -1,1 +1,1 @@
-sass --watch scss/publications-page.scss:css/publications-page.css
+sass --watch scss/homepage.scss:css/homepage.css

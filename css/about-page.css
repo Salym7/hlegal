@@ -25,6 +25,10 @@
   --bs-nav-pills-link-active-bg: none;
 }
 
+.modal {
+  --bs-modal-width: 650px ;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -213,6 +217,10 @@ body a {
     max-width: 1140px;
   }
 }
+.btn-close {
+  background: none;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype");
@@ -228,15 +236,23 @@ body a {
   font-display: swap;
 }
 .header {
+  position: absolute;
   padding: 50px 0 60px;
   width: 100%;
   z-index: 1;
+}
+.header-content-wrapper {
+  position: relative;
 }
 .header__top {
   font-size: 16px;
 }
 .header__top .container-lg {
   position: relative;
+}
+.header__top-social:hover svg path {
+  fill: #F0145A;
+  transition: 0.5s;
 }
 .header__top-content {
   position: absolute;
@@ -301,7 +317,7 @@ body a {
 }
 .header .navbar .nav-link {
   font-weight: 700;
-  padding-bottom: 3px;
+  padding-bottom: 4px;
   color: #24A3FF;
 }
 .header .navbar .nav-link.active {
@@ -310,6 +326,7 @@ body a {
 }
 .header .navbar .nav-link:hover {
   border-bottom: 2px solid;
+  transition: 0.3s;
 }
 
 @media (min-width: 1024px) {
@@ -334,7 +351,7 @@ body a {
     padding-top: 0;
   }
   .header .navbar {
-    padding: 15px 0 0 0;
+    padding: 0;
   }
   .header .navbar-brand {
     margin: 0;
@@ -383,7 +400,8 @@ body a {
     background-color: #F5F5FA;
   }
   .header__top .container-lg {
-    padding: 10px 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .header__top-content {
     margin: 0;
@@ -399,7 +417,10 @@ body a {
     margin: 0 !important;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 500px) {
+  .header {
+    padding-bottom: 30px;
+  }
   .header .logo-block {
     display: flex;
     gap: 4px;
@@ -417,6 +438,9 @@ body a {
   }
 }
 
+.intro {
+  padding-top: 176px;
+}
 .intro .about__advantages {
   border-left: 4px solid #E6E6F0;
 }
@@ -438,6 +462,17 @@ body a {
 }
 .intro__item-text {
   width: 100%;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .intro {
+    padding-top: 280px;
+  }
+}
+@media (max-width: 500px) {
+  .intro {
+    padding-top: 160px;
+  }
 }
 
 .bg {

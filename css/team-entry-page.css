@@ -250,6 +250,10 @@ body a {
 .header__top .container-lg {
   position: relative;
 }
+.header__top-social:hover svg path {
+  fill: #F0145A;
+  transition: 0.5s;
+}
 .header__top-content {
   position: absolute;
   z-index: 1;
@@ -313,7 +317,7 @@ body a {
 }
 .header .navbar .nav-link {
   font-weight: 700;
-  padding-bottom: 3px;
+  padding-bottom: 4px;
   color: #24A3FF;
 }
 .header .navbar .nav-link.active {
@@ -347,7 +351,7 @@ body a {
     padding-top: 0;
   }
   .header .navbar {
-    padding: 15px 0 0 0;
+    padding-top: 15px;
   }
   .header .navbar-brand {
     margin: 0;
@@ -396,7 +400,8 @@ body a {
     background-color: #F5F5FA;
   }
   .header__top .container-lg {
-    padding: 10px 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .header__top-content {
     margin: 0;
@@ -412,7 +417,10 @@ body a {
     margin: 0 !important;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 500px) {
+  .header .navbar {
+    padding-top: 0;
+  }
   .header {
     padding-bottom: 30px;
   }
@@ -564,6 +572,11 @@ body a {
   }
   .team-entry__list {
     margin-bottom: 0;
+  }
+}
+@media (max-width: 500px) {
+  .team-entry {
+    padding-top: 140px;
   }
 }
 

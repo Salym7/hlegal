@@ -1,11 +1,17 @@
 .publication-entry {
-  padding: 60px 0;
+  padding: 176px 0 60px 0;
 
   &__img {
+    height: 500px;
     width: 100%;
     margin-bottom: 30px;
     border-radius: 12px;
+    background-image: url("../assets/publication-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
   }
+
 
   &__topic {
     font-weight: $font-bold;
