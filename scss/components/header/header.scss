@@ -109,6 +109,7 @@
     .nav-link {
       font-weight: $font-bold;
       padding-bottom: 4px;
+      border-bottom: 2px solid transparent;
 
       &.active {
         border-bottom: 2px solid;

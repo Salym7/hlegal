@@ -317,6 +317,7 @@ body a {
 .header .navbar .nav-link {
   font-weight: 700;
   padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
 }
 .header .navbar .nav-link.active {
   border-bottom: 2px solid;
