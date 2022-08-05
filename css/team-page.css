@@ -506,6 +506,7 @@ body a {
 }
 .team__link {
   position: relative;
+  display: block;
 }
 .team__link svg {
   position: absolute;
